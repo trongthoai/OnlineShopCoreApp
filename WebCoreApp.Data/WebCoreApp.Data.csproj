@@ -5,10 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="Enums\" />
-    <Folder Include="Interfaces\" />
     <Folder Include="IRepositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebCoreApp.Infrastructure\WebCoreApp.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
