@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
@@ -8,7 +9,8 @@ using WebCoreApp.Data.Interfaces;
 namespace WebCoreApp.Data.Entities
 {
     [Table("AppUsers")]
-    public class AppUser : IdentityUser<Guid>, IDateTracking, ISwitchable
+    public class AppUser : IdentityUser<Guid>,
+        IDateTracking, ISwitchable
     {
         public string FullName { get; set; }
 

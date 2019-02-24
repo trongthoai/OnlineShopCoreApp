@@ -22,7 +22,7 @@ namespace WebCoreApp.Data.Entities
             this.URL = url;
             this.ParentId = parentId;
             this.IconCss = iconCss;
-            this.SortOrder = sortOrder;
+            this.SorOrder = sortOrder;
             this.Status = Status.Active;
         }
         [Required]
@@ -38,7 +38,7 @@ namespace WebCoreApp.Data.Entities
         public string ParentId { set; get; }
 
         public string IconCss { get; set; }
-        public int SortOrder { set; get; }
+        public int SorOrder { set; get; }
         public Status Status { set; get; }
     }
 }
